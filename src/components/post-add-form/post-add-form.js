@@ -6,7 +6,7 @@ const PostAddForm = () => {
     <form className='bottom-panel d-flex'>
       <input
         type='text'
-        placeholder='what you want?'
+        placeholder='what you want post?'
         className='form-control new-post-label'
       />
       <button type='submit' className='btn btn-outline-secondary'>

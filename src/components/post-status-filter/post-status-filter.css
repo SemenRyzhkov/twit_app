@@ -1,0 +1,10 @@
+.btn-group {
+  width: auto;
+  flex-grow: 1;
+  margin-left: 3px;
+}
+
+.btn-group button {
+  /* display: block; */
+  margin: 0 10px 0 10px;
+}

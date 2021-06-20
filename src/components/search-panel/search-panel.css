@@ -3,7 +3,13 @@
 }
 
 .search-panel .search-input {
-  width: auto;
+  width: 500px;
   flex-grow: 1;
   margin-right: 3px;
+}
+
+.search-panel .btn-group {
+  width: auto;
+  flex-grow: 1;
+  margin-left: 3px;
 }
