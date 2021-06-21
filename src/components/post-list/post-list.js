@@ -1,5 +1,6 @@
 import React from 'react';
 import PostListItem from '../post-list-item';
+import { ListGroup } from 'reactstrap';
 import './post-list.css';
 
 const PostList = ({ posts }) => {
@@ -15,8 +16,8 @@ const PostList = ({ posts }) => {
   });
 
   function isEmpty(obj) {
-    for(let prop in obj) {
-      if(obj.hasOwnProperty(prop)) {
+    for (let prop in obj) {
+      if (obj.hasOwnProperty(prop)) {
         return false;
       }
     }
@@ -24,7 +25,7 @@ const PostList = ({ posts }) => {
     return JSON.stringify(obj) === JSON.stringify({});
   }
 
-  return <div className='app-list list-group'>{elements}</div>;
+  return <ListGroup className='app-list'>{elements}</ListGroup>;
 };
 
 export default PostList;
