@@ -3,13 +3,13 @@ import PostListItem from '../post-list-item';
 import { ListGroup } from 'reactstrap';
 import './post-list.css';
 
-const PostList = ({ posts }) => {
+const PostList = ({ posts, onDelete }) => {
   const elements = posts.map((post) => {
     if (typeof post === 'object' && !isEmpty(post)) {
       const { id, ...postProps } = post;
       return (
         <li key={id} className='list-group-item'>
-          <PostListItem {...postProps} />
+          <PostListItem {...postProps} onDelete={()=>onDelete(id)} />
         </li>
       );
     }
